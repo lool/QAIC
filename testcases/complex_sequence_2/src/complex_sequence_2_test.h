@@ -4,9 +4,9 @@
 #ifndef COMPLEX_SEQUENCE_2_TEST_H
 #define COMPLEX_SEQUENCE_2_TEST_H
 
-#include "AEEStdDef.h"
+#include <fastrpc/AEEStdDef.h>
 #include <stdbool.h>
-#include "remote.h"
+#include <fastrpc/remote.h>
 
 #ifdef __cplusplus
 extern "C" {

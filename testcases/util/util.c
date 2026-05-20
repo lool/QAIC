@@ -8,8 +8,8 @@
 #include <string.h>
 #include <inttypes.h>
 #include <unistd.h>
-#include "AEEStdErr.h"
-#include "remote.h"
+#include <fastrpc/AEEStdErr.h>
+#include <fastrpc/remote.h>
 #include "util.h"
 
 const char *get_domain_name(int domain_id)

@@ -5,8 +5,8 @@
 #define __HEXAGON_TEST_UTIL_H__
 
 #include <stdbool.h>
-#include "AEEStdDef.h"
-#include "remote.h"
+#include <fastrpc/AEEStdDef.h>
+#include <fastrpc/remote.h>
 
 #ifdef __cplusplus
 extern "C" {

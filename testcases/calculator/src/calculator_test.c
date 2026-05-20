@@ -6,7 +6,7 @@
 #include <errno.h>
 #include <inttypes.h>
 #include <unistd.h>
-#include "AEEStdErr.h"
+#include <fastrpc/AEEStdErr.h>
 #include "calculator.h"
 #include "rpcmem.h"
 #include "util.h"

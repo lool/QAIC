@@ -5,7 +5,7 @@
 #define INCLUDE_IDL_3_TEST_H
 
 #include <stdbool.h>
-#include "AEEStdDef.h"
+#include <fastrpc/AEEStdDef.h>
 
 #ifdef __cplusplus
 extern "C" {

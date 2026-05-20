@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "AEEStdErr.h"
+#include <fastrpc/AEEStdErr.h>
 #include "util.h"
 
 static void print_usage()

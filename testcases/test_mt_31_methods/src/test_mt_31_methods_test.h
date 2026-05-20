@@ -5,7 +5,7 @@
 #define TEST_MT_31_METHODS_TEST_H
 
 #include <stdbool.h>
-#include "AEEStdDef.h"
+#include <fastrpc/AEEStdDef.h>
 
 #ifdef __cplusplus
 extern "C" {

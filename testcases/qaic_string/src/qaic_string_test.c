@@ -1,7 +1,7 @@
 //% Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 //% SPDX-License-Identifier: BSD-3-Clause-Clear
 
-#include "AEEStdErr.h"
+#include <fastrpc/AEEStdErr.h>
 #include "qaic_string.h"
 #include "qaic_string_test.h"
 #include "rpcmem.h"

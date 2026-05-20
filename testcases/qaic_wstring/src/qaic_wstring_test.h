@@ -4,7 +4,7 @@
 #ifndef QAIC_WSTRING_TEST_H
 #define QAIC_WSTRING_TEST_H
 
-#include "AEEStdDef.h"
+#include <fastrpc/AEEStdDef.h>
 
 #ifdef __cplusplus
 extern "C" {

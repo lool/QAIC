@@ -4,7 +4,7 @@
 #ifndef QAIC_STRING_TEST_H
 #define QAIC_STRING_TEST_H
 
-#include "AEEStdDef.h"
+#include <fastrpc/AEEStdDef.h>
 #include <stdbool.h>
 
 #ifdef __cplusplus

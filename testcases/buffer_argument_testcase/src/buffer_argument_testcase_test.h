@@ -4,9 +4,9 @@
 #ifndef BUFFER_ARGUMENT_TESTCASE_TEST_H
 #define BUFFER_ARGUMENT_TESTCASE_TEST_H
 
-#include "AEEStdDef.h"
+#include <fastrpc/AEEStdDef.h>
 #include <stdbool.h>
-#include "remote.h"
+#include <fastrpc/remote.h>
 
 #ifdef __cplusplus
 extern "C" {
