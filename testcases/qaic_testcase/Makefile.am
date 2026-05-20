@@ -1,7 +1,7 @@
 MODULE_NAME=qaic_testcase
 
 qaic:
-	qaic -st -I../../inc $(SYSTEM_CFLAGS) inc/$(MODULE_NAME).idl
+	qaic -st -I../../inc inc/$(MODULE_NAME).idl
 
 # Just HACK foir now till we fix QAIC to do this correctly
 

@@ -1,8 +1,8 @@
 MODULE_NAME=include_idl_2
 
 qaic:
-	qaic -st -I../../inc $(SYSTEM_CFLAGS) inc/$(MODULE_NAME).idl
-	qaic -st -I../../inc $(SYSTEM_CFLAGS) inc/foo.idl
+	qaic -st -I../../inc inc/$(MODULE_NAME).idl
+	qaic -st -I../../inc inc/foo.idl
 
 # Just HACK foir now till we fix QAIC to do this correctly
 

@@ -28,21 +28,21 @@ AC_SUBST(AM_CFLAGS)
 QAIC_GENERATE="qaic -I ../inc"
 AC_SUBST([QAIC_GENERATE])
 
-# System include flags
-SYSTEM_CFLAGS="-I/usr/include -I/usr/local/include -I/usr/local/include/fastrpc/inc -I/usr/include/fastrpc -I../inc"
-AC_SUBST(SYSTEM_CFLAGS)
+# Include paths for local headers and fastrpc (for qaic-generated code)
+LOCAL_CFLAGS="-I../inc -I/usr/include/fastrpc"
+AC_SUBST(LOCAL_CFLAGS)
 
-SKEL_CFLAGS="-fPIC -O2 --target=hexagon -Wall -Werror -Iinc $SYSTEM_CFLAGS -I $ARCHINC"
+SKEL_CFLAGS="-fPIC -O2 --target=hexagon -Wall -Werror -Iinc $LOCAL_CFLAGS -I $ARCHINC"
 SKEL_LDFLAGS="-shared -z separate-loadable-segments"
 AC_SUBST([SKEL_CFLAGS])
 AC_SUBST([SKEL_LDFLAGS])
 
-STUB_CFLAGS="-fPIC -O2 --target=aarch64-linux-gnu -Wall -Werror -Iinc $SYSTEM_CFLAGS -I $ARCHINC -mno-outline-atomics"
+STUB_CFLAGS="-fPIC -O2 --target=aarch64-linux-gnu -Wall -Werror -Iinc $LOCAL_CFLAGS -I $ARCHINC -mno-outline-atomics"
 STUB_LDFLAGS=" -shared"
 AC_SUBST([STUB_CFLAGS])
 AC_SUBST([STUB_LDFLAGS])
 
-TEST_CFLAGS="-fPIC -O2 --target=aarch64-linux-gnu -Wall -Werror -Iinc $SYSTEM_CFLAGS -I $ARCHINC"
+TEST_CFLAGS="-fPIC -O2 --target=aarch64-linux-gnu -Wall -Werror -Iinc $LOCAL_CFLAGS -I $ARCHINC"
 AC_SUBST([TEST_CFLAGS])
 
 AC_ARG_VAR([TEST_LDFLAGS], [Linker flags for testcase binaries])
